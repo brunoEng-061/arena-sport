@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arena Sport – Tênis, roupas e shorts esportivos</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F8FA;--sf:#FFFFFF;--tx:#14213D;--mu:#4A5568;--pr:#0B3D91;--on-pr:#FFFFFF;--ac:#FFB400;--on-ac:#14213D;--bd:#CBD2DC;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);font-size:100%}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1626;--sf:#17223A;--tx:#F1F5F9;--mu:#B6C2D4;--pr:#8DBBFF;--on-pr:#0E1626;--bd:#34425E;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1626;--sf:#17223A;--tx:#F1F5F9;--mu:#B6C2D4;--pr:#8DBBFF;--on-pr:#0E1626;--bd:#34425E;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:1rem/1.6 Barlow,system-ui,Arial,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed",Impact,Arial,sans-serif;line-height:1.1;margin:0 0 .5rem}
+h1{font-size:clamp(2.4rem,7vw,4.2rem);font-weight:800}h2{font-size:2rem}h3{font-size:1.35rem}
+a{color:var(--pr)}p{max-width:68ch}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ac);color:var(--on-ac);padding:.6rem 1rem;z-index:99}.skip:focus{left:0}
+.wrap{max-width:1100px;margin:auto;padding:0 1.25rem}
+section{padding:3rem 0}
+.btn{display:inline-block;border:2px solid var(--pr);background:var(--pr);color:var(--on-pr);font:600 1rem Barlow,sans-serif;padding:.65rem 1.2rem;border-radius:6px;cursor:pointer;text-decoration:none;min-height:44px}
+.btn.alt{background:transparent;color:var(--pr)}.btn.acc{background:var(--ac);border-color:var(--ac);color:var(--on-ac)}
+header{position:sticky;top:0;z-index:10;background:var(--sf);border-bottom:2px solid var(--ac);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;padding:.6rem 1.25rem;max-width:1100px;margin:auto}
+.logo{font:800 1.8rem "Barlow Condensed",sans-serif;color:var(--tx);text-decoration:none}.logo span{color:var(--pr)}
+nav a{margin-right:1rem;color:var(--tx);font-weight:600;text-decoration:none}nav a:hover{text-decoration:underline}
+.tools{display:flex;gap:.4rem;align-items:center}.tools button{min-width:44px}
+.hero-txt{padding:1rem 0}
+.car{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}
+.sl{display:none;min-height:340px;padding:2rem;align-items:center;gap:2rem;grid-template-columns:1.2fr 1fr}
+.sl.on{display:grid}
+.s1{background:#0B3D91;color:#fff}.s2{background:#14213D;color:#fff}.s3{background:#FFB400;color:#14213D}
+.sl .ic{font-size:7rem;text-align:center}
+.s1 .btn,.s2 .btn{background:#FFB400;border-color:#FFB400;color:#14213D}.s3 .btn{background:#14213D;border-color:#14213D;color:#fff}
+.ctl{display:flex;gap:.5rem;align-items:center;justify-content:center;padding:.6rem;background:var(--sf)}
+.dot[aria-current="true"]{background:var(--ac);color:var(--on-ac)}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:1rem}
+.card .pic{font-size:3.5rem;text-align:center;background:var(--bg);border-radius:8px;padding:.5rem}
+.price{font:800 1.5rem "Barlow Condensed",sans-serif;color:var(--pr)}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.tabs button[aria-selected="true"]{background:var(--pr);color:var(--on-pr)}
+input,select,textarea{width:100%;font:inherit;color:var(--tx);background:var(--sf);border:2px solid var(--mu);border-radius:6px;padding:.6rem}
+label{display:block;font-weight:600;margin:.8rem 0 .25rem}
+.err{color:var(--tx);font-weight:600;min-height:1.5rem}.err.bad::before{content:"⚠ "}.err.ok::before{content:"✔ "}
+.two{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.exp{border-left:6px solid var(--ac)}
+.av{display:inline-grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--ac);color:var(--on-ac);font-weight:700;margin-right:.5rem}
+footer{background:var(--sf);border-top:2px solid var(--ac);padding:2rem 0;color:var(--mu)}
+footer a{color:var(--tx)}
+@media(max-width:700px){.sl.on{grid-template-columns:1fr}.sl .ic{font-size:4rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header>
+ <div class="bar">
+  <a class="logo" href="#topo">ARENA<span>SPORT</span></a>
+  <nav aria-label="Principal"><a href="#produtos">Produtos</a><a href="#sobre">Por que a Arena</a><a href="#login">Entrar</a><a href="#contato">Contato</a></nav>
+  <div class="tools" role="group" aria-label="Acessibilidade">
+   <button class="btn alt" id="fm" aria-label="Diminuir fonte">A−</button>
+   <button class="btn alt" id="fp" aria-label="Aumentar fonte">A+</button>
+   <button class="btn alt" id="th" aria-pressed="false">Modo escuro</button>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<section id="topo"><div class="wrap">
+ <div class="hero-txt"><h1>Bora treinar? A gente separa o que você precisa.</h1><p>Tênis, camisetas e shorts para quem corre de manhã cedo, treina depois do trabalho ou bate aquela pelada no fim de semana. Frete grátis acima de R$ 299.</p></div>
+ <div class="car" role="region" aria-roledescription="carrossel" aria-label="Destaques da semana">
+  <div class="sl s1 on" aria-label="1 de 3"><div><h2>Pra corrida de domingo: tênis até 30% off</h2><p>Leves, macios e pensados para quem corre de verdade.</p><a class="btn" href="#produtos" data-cat="Tênis">Ver tênis</a></div><div class="ic" aria-hidden="true">👟</div></div>
+  <div class="sl s2" aria-label="2 de 3"><div><h2>Treinar confortável não precisa pesar no bolso</h2><p>Shorts a partir de R$ 59, com tecido que seca rápido e não aperta.</p><a class="btn" href="#produtos" data-cat="Shorts">Ver shorts</a></div><div class="ic" aria-hidden="true">🩳</div></div>
+  <div class="sl s3" aria-label="3 de 3"><div><h2>Suou? Sem problema. Dry-fit: leve 3, pague 2</h2><p>Proteção UV e ventilação nas costas, boa para o sol de Brasília.</p><a class="btn" href="#produtos" data-cat="Camisetas">Ver camisetas</a></div><div class="ic" aria-hidden="true">👕</div></div>
+  <div class="ctl"><button class="btn alt" id="pv" aria-label="Slide anterior">‹</button><span id="dots"></span><button class="btn alt" id="nx" aria-label="Próximo slide">›</button><button class="btn alt" id="pl" aria-label="Pausar rotação automática">Pausar</button></div>
+ </div>
+</div></section>
+
+<section id="produtos"><div class="wrap">
+ <h2>Produtos</h2>
+ <label for="q">Buscar produto</label><input id="q" type="search" placeholder="Ex.: corrida, preto, regata">
+ <div class="tabs" role="tablist" aria-label="Categorias" id="tabs"></div>
+ <p id="cnt" aria-live="polite"></p>
+ <div class="grid" id="list" role="tabpanel"></div>
+</div></section>
+
+<section id="sobre"><div class="wrap">
+ <h2>Por que comprar na Arena</h2>
+ <div class="grid">
+  <article class="card exp"><h3>Errou o tamanho? Acontece.</h3><p>Troque em até 30 dias, sem custo e sem burocracia, na loja ou pelo site.</p></article>
+  <article class="card exp"><h3>Dúvida no tamanho? A gente ajuda</h3><p>Tabela em centímetros e dicas de quem já calçou, como “a numeração fecha” ou “pode pedir um maior”.</p></article>
+  <article class="card exp"><h3>Chega antes do treino</h3><p>Entrega em até 3 dias úteis no Distrito Federal, com aviso por mensagem.</p></article>
+  <article class="card exp"><h3>Feito para todo mundo</h3><p>Letra ajustável, modo escuro, navegação pelo teclado e cores com bom contraste. Esporte é para todos, e o site também.</p></article>
+ </div>
+</div></section>
+
+<section id="depoimentos"><div class="wrap">
+ <h2>Quem treina com a gente</h2>
+ <div class="grid">
+  <figure class="card" style="margin:0"><blockquote style="margin:0 0 1rem">“Comprei o tênis de corrida na segunda e já estreei no sábado. Serviu de primeira.”</blockquote><figcaption><span class="av" aria-hidden="true">MC</span> Marina, corre no Parque da Cidade</figcaption></figure>
+  <figure class="card" style="margin:0"><blockquote style="margin:0 0 1rem">“Errei o tamanho do short e trocaram sem eu precisar explicar nada. Atendimento nota 10.”</blockquote><figcaption><span class="av" aria-hidden="true">RT</span> Rafael, treina na academia</figcaption></figure>
+  <figure class="card" style="margin:0"><blockquote style="margin:0 0 1rem">“Aumentei a letra e ativei o modo escuro. Finalmente consigo comprar sem forçar a vista.”</blockquote><figcaption><span class="av" aria-hidden="true">LS</span> Dona Lúcia, caminha toda manhã</figcaption></figure>
+ </div>
+ <p>Depoimentos fictícios, criados para este projeto acadêmico.</p>
+</div></section>
+
+<section id="login"><div class="wrap two">
+ <div><h2>Que bom te ver por aqui</h2><p>Entre para acompanhar seus pedidos e guardar seus favoritos. (Demonstração: qualquer e-mail válido e senha com 6 ou mais caracteres.)</p></div>
+ <form id="fl" class="card" novalidate>
+  <label for="le">E-mail</label><input id="le" type="email" autocomplete="email" required>
+  <label for="ls">Senha</label><input id="ls" type="password" autocomplete="current-password" minlength="6" required>
+  <p id="lm" class="err" role="status"></p>
+  <button class="btn" type="submit">Entrar</button>
+ </form>
+</div></section>
+
+<section id="contato"><div class="wrap two">
+ <div><h2>Fale com a gente</h2><p>Dúvida sobre tamanho, pedido ou troca? Escreva aqui que uma pessoa de verdade responde em até 1 dia útil.</p></div>
+ <form id="fc" class="card" novalidate>
+  <label for="cn">Nome</label><input id="cn" required autocomplete="name">
+  <label for="ce">E-mail</label><input id="ce" type="email" required autocomplete="email">
+  <label for="ca">Assunto</label><select id="ca"><option>Pedido</option><option>Troca ou devolução</option><option>Tamanhos</option><option>Outro</option></select>
+  <label for="cm">Mensagem</label><textarea id="cm" rows="4" required></textarea>
+  <p id="cs" class="err" role="status"></p>
+  <button class="btn acc" type="submit">Enviar mensagem</button>
+ </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <p><strong>Arena Sport</strong> – projeto acadêmico fictício. Brasília, DF.</p>
+ <p><a href="#topo">Voltar ao topo</a> · <a href="#produtos">Produtos</a> · <a href="#contato">Contato</a></p>
+ <p>© 2026 Arena Sport. Todos os direitos reservados.</p>
+</div></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const root=document.documentElement;
+function sv(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function ld(k){try{return localStorage.getItem(k)}catch(e){return null}}
+/* tema e fonte */
+let theme=ld("theme"),fs=parseInt(ld("fs"))||100;
+if(!theme)theme=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
+function applyTheme(){root.dataset.theme=theme;$("#th").textContent=theme==="dark"?"Modo claro":"Modo escuro";$("#th").setAttribute("aria-pressed",theme==="dark")}
+function applyFs(){root.style.fontSize=fs+"%"}
+$("#th").onclick=()=>{theme=theme==="dark"?"light":"dark";sv("theme",theme);applyTheme()};
+$("#fp").onclick=()=>{fs=Math.min(150,fs+10);sv("fs",fs);applyFs()};
+$("#fm").onclick=()=>{fs=Math.max(80,fs-10);sv("fs",fs);applyFs()};
+applyTheme();applyFs();
+/* carrossel */
+const sl=$$(".sl");let i=0,timer=null,paused=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const dots=$("#dots");
+sl.forEach((_,n)=>{const b=document.createElement("button");b.className="btn alt dot";b.textContent=n+1;b.setAttribute("aria-label","Ir para o slide "+(n+1));b.onclick=()=>go(n);dots.appendChild(b)});
+function go(n){i=(n+sl.length)%sl.length;sl.forEach((s,k)=>s.classList.toggle("on",k===i));$$(".dot").forEach((d,k)=>d.setAttribute("aria-current",k===i))}
+function run(){clearInterval(timer);if(!paused)timer=setInterval(()=>go(i+1),6000);$("#pl").textContent=paused?"Retomar":"Pausar";$("#pl").setAttribute("aria-label",paused?"Retomar rotação automática":"Pausar rotação automática")}
+$("#pv").onclick=()=>go(i-1);$("#nx").onclick=()=>go(i+1);$("#pl").onclick=()=>{paused=!paused;run()};
+go(0);run();
+/* produtos */
+const P=[["Tênis Corrida Veloz","Tênis",299.9,"👟"],["Tênis Treino Força","Tênis",249.9,"👟"],["Tênis Casual Urbano","Tênis",199.9,"👟"],["Chuteira Campo Pro","Tênis",329.9,"⚽"],
+["Camiseta Dry-fit Preta","Camisetas",79.9,"👕"],["Regata Treino Azul","Camisetas",59.9,"🎽"],["Camisa Térmica UV","Camisetas",99.9,"👕"],["Camiseta Algodão Básica","Camisetas",49.9,"👕"],
+["Short Corrida Leve","Shorts",69.9,"🩳"],["Short Academia 2 em 1","Shorts",89.9,"🩳"],["Bermuda Futebol","Shorts",59.9,"🩳"],["Short Compressão","Shorts",79.9,"🩳"]];
+const cats=["Todos","Tênis","Camisetas","Shorts"];let cat="Todos";
+const tb=$("#tabs");
+cats.forEach(c=>{const b=document.createElement("button");b.className="btn alt";b.role="tab";b.textContent=c;b.onclick=()=>{cat=c;render()};tb.appendChild(b)});
+function render(){
+ const q=$("#q").value.trim().toLowerCase();
+ $$("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.textContent===cat));
+ const r=P.filter(p=>(cat==="Todos"||p[1]===cat)&&(p[0]+" "+p[1]).toLowerCase().includes(q));
+ $("#list").innerHTML=r.map(p=>`<article class="card"><div class="pic" aria-hidden="true">${p[3]}</div><h3>${p[0]}</h3><p>${p[1]}</p><p class="price">R$ ${p[2].toFixed(2).replace(".",",")}</p><button class="btn" data-add="${p[0]}">Comprar</button></article>`).join("")||"<p>Não achamos nada com essa busca. Que tal tentar outra palavra ou ver “Todos”?</p>";
+ $("#cnt").textContent=r.length+" produto(s) em “"+cat+"”";
+}
+$("#q").oninput=render;
+$("#list").onclick=e=>{const b=e.target.closest("[data-add]");if(b){b.textContent="Adicionado ✔"}};
+$$("[data-cat]").forEach(a=>a.addEventListener("click",()=>{cat=a.dataset.cat;render()}));
+render();
+/* formulários */
+const em=v=>/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v);
+function msg(el,t,ok){el.textContent=t;el.className="err "+(ok?"ok":"bad")}
+$("#fl").onsubmit=e=>{e.preventDefault();
+ if(!em($("#le").value))return msg($("#lm"),"Esse e-mail parece incompleto. Confira se tem o @ e o final, como nome@exemplo.com.");
+ if($("#ls").value.length<6)return msg($("#lm"),"Sua senha precisa de pelo menos 6 caracteres. Falta pouco!");
+ msg($("#lm"),"Pronto, você entrou. Bom treino!",true)};
+$("#fc").onsubmit=e=>{e.preventDefault();
+ if(!$("#cn").value.trim())return msg($("#cs"),"Informe seu nome.");
+ if(!em($("#ce").value))return msg($("#cs"),"Digite um e-mail válido, como nome@exemplo.com.");
+ if(!$("#cm").value.trim())return msg($("#cs"),"Escreva sua mensagem.");
+ msg($("#cs"),"Recebemos sua mensagem! Nossa equipe responde em até 1 dia útil.",true);e.target.reset()};
+</script>
+</body>
+</html>
